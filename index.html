@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Heliodon</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer=""></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <header class="hero-section text-center d-flex justify-content-center">
+    <div>
+      <a hrel="" target="_blank"><img src="image/logo-lca.png" style="aspect-ratio: 1; max-height: 15vh;"> </a>
+      <h3 class="mb-5">Laboratório de Conforto Ambiental</h3>
+
+      <!-- CONTAINER GERAL CENTRALIZADO -->
+      <div class="text-center">
+        
+        <!-- BLOCO DE SELEÇÃO -->
+        <div class="d-flex flex-column align-items-center gap-3">
+
+          <!-- EVENTO -->
+          <div class="d-flex flex-column text-start">
+            <label for="arcoSelect" class="fw-bold mb-1">SELECIONE UM ARCO:</label>
+            <select id="arcoSelect" class="form-select">
+              <option value="" disabled selected class="text-center">-</option>
+              <option value="A" class="text-center">Arco 1</option>
+              <option value="B" class="text-center">Arco 2</option>
+              <option value="C" class="text-center">Arco 3</option>
+            </select>
+          </div>
+
+          <!-- HORÁRIO -->
+          <div class="d-flex flex-column text-start">
+            <label for="timeSelect" class="fw-bold mb-1">SELECIONE UM HORÁRIO:</label>
+            <select id="timeSelect" class="form-select">
+              <option value="" disabled selected class="text-center">-</option>
+              <option value="1" class="text-center">05h00</option>
+              <option value="2" class="text-center">06h00</option>
+              <option value="3" class="text-center">07h00</option>
+              <option value="4" class="text-center">08h00</option>
+              <option value="5" class="text-center">09h00</option>
+              <option value="6" class="text-center">10h00</option>
+              <option value="7" class="text-center">11h00</option>
+              <option value="8" class="text-center">12h00</option>
+              <option value="9" class="text-center">13h00</option>
+              <option value="10" class="text-center">14h00</option>
+              <option value="11" class="text-center">15h00</option>
+              <option value="12" class="text-center">16h00</option>
+              <option value="13" class="text-center">17h00</option>
+              <option value="14" class="text-center">18h00</option>
+              <option value="15" class="text-center">19h00</option>
+            </select>
+          </div>
+
+          <!-- Script do horário 
+           <script>
+            const select = document.getElementById('timeSelect');
+
+            for (let hora = 5; hora <= 19; hora++) {
+              const horaFormatada = hora.toString().padStart(2, '0') + ':00';
+              const option = document.createElement('option');
+              option.value = horaFormatada;
+              option.textContent = horaFormatada;
+              select.appendChild(option);
+            }
+          </script>--> 
+
+          <!-- LATITUDE -->
+          <!--<div class="d-flex flex-column text-start mb-3">
+            <label for="latSelect" class="fw-bold mb-1">SELECIONE UMA LATITUDE:</label>
+            <select id="latSelect" class="form-select">
+              <option value="" disabled selected class="text-center">-</option>
+              <option value="0">0° - Equador</option>
+              <option value="1">8,0°S - Recife - BR</option>
+              <option value="2">23,5°S - São Paulo - BR</option>
+              <option value="3">30,0°S - Porto Alegre - BR</option>
+              <option value="4">41,1°S - Bariloche - AR</option>
+              <option value="5">53,1°S - Punta Arenas - CL</option>
+              <option value="6">9,9°N - San José - CR</option>
+              <option value="7">19,4°N - Cidade do México - MX</option>
+              <option value="8">30,0°N - Cairo - EG</option>
+              <option value="9">40,7°N - Nova York - EUA</option>
+              <option value="10">49,3°N - Vancouver - CA</option>
+            </select>
+          </div>-->
+
+          <!-- BOTÃO -->
+          <div class="mb-1">
+            <button id="btnEnviar" class="btn btn-success">Enviar dados</button>
+          </div>
+          <!--<div class="mb-5">
+            <button id="btnApagar" class="btn btn-outline-success">Apagar Lâmpadas</button>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGOS NO RODAPÉ -->
+    <a href="https://www.iau.usp.br/" target="_blank" class="position-absolute start-0 bottom-0 m-4">
+      <img src="image/logo-iau.png" alt="Instituto de Arquitetura e Urbanismo" class="header-img">
+    </a>
+    <div class="position-absolute bottom-0 m-4" style="margin-left: 50%;">
+      <a class="nav-icons mx-3" href="#" target="_blank">
+        <i class="bi bi-envelope fs-3"></i>
+      </a>
+      <a class="nav-icons mx-3" href="#" target="_blank">
+        <i class="bi bi-github fs-3"></i>
+      </a>
+      <a class="nav-icons mx-3" href="#" target="_blank">
+        <i class="bi bi-youtube fs-3"></i>
+      </a>
+    </div>
+    <a href="https://www5.usp.br/" target="_blank" class="position-absolute end-0 bottom-0 m-4">
+      <img src="image/logo-usp.png" alt="Universidade de São Paulo" class="header-img">
+    </a>
+  </header>
+  
+<script src="script.js"></script>
+</body>
+</html>
